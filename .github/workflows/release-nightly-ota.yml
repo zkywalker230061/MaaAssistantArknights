@@ -164,7 +164,7 @@ jobs:
 
   push-tag:
     needs: build-win-nightly
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: Fetch MaaRelease
         uses: actions/checkout@v4
@@ -189,7 +189,7 @@ jobs:
     strategy:
       matrix:
         target: [x64]
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: Echo tag version
         run: |

@@ -22,7 +22,7 @@ env:
 
 jobs:
   create-tag:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: Fetch MaaRelease
         uses: actions/checkout@v4
@@ -77,7 +77,7 @@ jobs:
 
   make-ota:
     needs: create-tag
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     strategy:
       matrix:
         target:
@@ -195,7 +195,7 @@ jobs:
     needs:
       - make-ota
       - make-ota-mac
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     env:
       GH_TOKEN: ${{ secrets.MISTEOWORKFLOW }}
     steps:
