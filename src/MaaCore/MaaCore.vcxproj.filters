@@ -465,6 +465,9 @@
     <ClInclude Include="Task\Roguelike\Sami\RoguelikeCollapsalParadigmTaskPlugin.h">
       <Filter>Source\Task\Roguelike</Filter>
     </ClInclude>
+    <ClInclude Include="Task\Roguelike\Map\RoguelikeMap.h">
+      <Filter>Source\Task\Roguelike</Filter>
+    </ClInclude>
     <ClInclude Include="Task\Roguelike\RoguelikeConfig.h">
       <Filter>Source\Task\Roguelike</Filter>
     </ClInclude>
@@ -969,6 +972,9 @@
       <Filter>Source\Task\Roguelike</Filter>
     </ClCompile>
     <ClCompile Include="Task\Roguelike\Sami\RoguelikeCollapsalParadigmTaskPlugin.cpp">
+      <Filter>Source\Task\Roguelike</Filter>
+    </ClCompile>
+    <ClCompile Include="Task\Roguelike\Map\RoguelikeMap.cpp">
       <Filter>Source\Task\Roguelike</Filter>
     </ClCompile>
     <ClCompile Include="Task\Roguelike\RoguelikeConfig.cpp">
